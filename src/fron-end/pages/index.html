@@ -1,15 +1,29 @@
 <!doctype html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Target Intelligence</title>
+
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../chart.js/Chart.min.css">
     <link rel="icon" href="../assets/icon-browser.png" type="image/png"/>
+    <title>Target Intelligence</title>
 </head>
 <body>
 
+    <section class="flex center authorization">
+        <form class="flex center login">
+            <h3 class="flex h1">Войти</h3>
+            <label class="flex lb">Введите логин или пароль:</label>
+            <input type="email" class="flex in">
+            <label class="flex lb">Введите пароль:</label>
+            <input type="password" class="flex in" id="in">
+            <button class="flex center suc">Войти</button>
+        </form>
+        <img src="../assets/bg-point.svg" class="flex point">
+    </section>
+    <script src="../chart.js/Chart.min.js"></script>
 </body>
 </html>
