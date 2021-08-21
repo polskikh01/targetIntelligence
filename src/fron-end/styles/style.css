@@ -1,7 +1,14 @@
+@font-face {
+    font-family: Babes;
+    src: url("../fonts/BebasNeueCyrillicRegular.ttf");
+}
+
 * {
     display: flex;
     position: relative;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Babes;
 }
+
