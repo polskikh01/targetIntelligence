@@ -1,6 +1,7 @@
-@font-face {
-    font-family: Babes;
-    src: url("../fonts/BebasNeueCyrillicRegular.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --blac: #000000;
 }
 
 * {
@@ -8,7 +9,78 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Babes;
+    font-family: 'Comfortaa', cursive;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.authorization {
+    height: 1080px;
+    background: linear-gradient(90deg, #B65EBB 0%, #F5E291 100%);
+}
+
+.authorization .login {
+    width: 840px;
+    height: 640px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.authorization .login .h1 {
+    font-size: 36px;
+    line-height: 41px;
+    color: var(--blac);
+    margin-bottom: 51px;
+}
+
+.authorization .login .lb {
+    width: 402px;
+    font-size: 27px;
+    line-height: 31px;
+    color: var(--blac);
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
+.authorization .login .in {
+    width: 398px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.authorization .login #in {
+    margin-bottom: 60px;
+}
+
+.authorization .suc {
+    background-image: linear-gradient(to right, #b65ebb 0%, #e5c09c  35%, #f5e291  100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
 }
 
 .flex {
@@ -58,4 +130,15 @@
 .landing_btn img {
     width: 60px;
     height: 60px;
+}
+
+.authorization .suc:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.point {
+    position: absolute;
+    z-index: 0;
 }
