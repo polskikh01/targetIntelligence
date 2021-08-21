@@ -41,7 +41,7 @@ f.close()
 
 del dirsPlayerLog[-1]
 
-adsIndexes = [15715,31555,31915,29030,24631,32871,33115,24821,24639,25427,25051,75294,78950,59080,61039,52648,50565,51169,54988,54861]
+adsIndexes = [41517, 42473, 44054, 42181, 40085, 41081, 41007, 41061, 55713, 56432, 66607, 64856, 66395, 57487, 58384, 56954, 58492, 57470]
 
 a = -1
 for j in adsIndexes:
@@ -56,60 +56,18 @@ for j in adsIndexes:
             datesOfOTS[a][int(datetime.utcfromtimestamp(int(row['DateTimeInTick'])/1000).strftime('%d'))] += int(row['MacCountAll'])
     print("advertisementId = "+ str(j))
     print(datesOfOTS)
-    
+    a = -1
     for i in range(0,len(datesOfOTS)):
         for key, value in datesOfOTS[i].items():
-            doo[i][key] = 0
+            datesOfOTS[i][key] = 0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-#for i in range(0, len(dirsPlayerLog)):
-    #print("Билборд №"+str(i+1))
-    #test2 = pandas.read_parquet(dirsPlayerLog[i], engine = "fastparquet", columns = colPlayerLog)
-    #datesOfOTS[int(datetime.utcfromtimestamp(int(test2.loc[test2['advertisementId'] == 15715 ]['DateTimeInTick'])/1000).strftime('%d'))] += test2.loc[test2['advertisementId'] == 15715 & test2['DateTimeInTick'] == 15715]['MacCountAll'].sum()
-    #print(test2.loc[test2['advertisementId'] == 15715]['MacCountAll'].sum())
-
-#test2 = pandas.read_parquet(dirsPlayerLog[0], engine = "fastparquet", columns = colPlayerLog)
-#print(test2.loc[test2['advertisementId'] == 15715])
-#print(datetime.utcfromtimestamp(int(test2.loc[0]['DateTimeInTick'])/1000).strftime('%Y-%m-%d %H:%M:%S'))
 
 
 '''
 
-t0= time.perf_counter()
+test2 = pandas.read_parquet(dirsPlayerLog[102], engine = "fastparquet", columns = colPlayerLog)
+print(test2)
 
-for i in range(0, len(dirsPlayerLog)):
-    playerLogParquet = pandas.read_parquet(dirsPlayerLog[i], engine = "fastparquet", columns = colPlayerLog)
-
-    for index, row in playerLogParquet.iterrows():
-        if row['advertisementId'] == 25329:
-            datesOfOTS[i][int(datetime.utcfromtimestamp(int(row['DateTimeInTick'])/1000).strftime('%d'))] += int(row['MacCountAll'])
-
-print(datesOfOTS)
-t1 = time.perf_counter() - t0
-print("Время выполнения скрипта: ", t1 - t0)
-'''
-
-#визуализация
-'''
-plt.bar(list(datesOfOTS.keys()), datesOfOTS.values(), color='g')
-plt.xlabel('Days of Month')
-plt.ylabel('OTS')
-plt.title('Histogram of OTS per days of mouth')
-plt.xlim(0, 31)
-plt.ylim(0, 100000)
-plt.grid(True)
-plt.show()
 '''
