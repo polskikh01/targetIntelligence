@@ -288,10 +288,22 @@
 .admin_banners_list_num {
     height: 100px;
     width: 119px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
     border-right: 2px solid #000000;
 }
 
 .admin_banners_list_adress {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
     margin-left: 51px;
 }
 
