@@ -16,23 +16,20 @@
         <span class="admin-head_span">Панель администратора</span>
         <a href="../admin/banners.html" class="flex center admin-head_link">Баннеры</a>
         <a href="../admin/geotag.html" class="flex center admin-head_link">Геометка</a>
-        <a href="#" class="flex center admin-head_link" id="admin-head_active">Входные параметры</a>
-        <a href="../admin/forecast.html" class="flex center admin-head_link">Прогноз OTS</a>
+        <a href="../admin/options.html" class="flex center admin-head_link">Входные параметры</a>
+        <a href="#" class="flex center admin-head_link" id="admin-head_active">Прогноз OTS</a>
     </header>
-    <section class="admin_options">
+    <section class="admin_options all-page">
         <div class="flex center admin_options_input">
             <label>Период кампании:</label>
             <input type="date" class="flex center">
             <input type="date" class="flex center">
         </div>
+        <img src="../../assets/Graph.png">
         <div class="flex center admin_options_ots">
-            <span class="flex center admin_options_ots_span">Желаемый OTS</span>
-            <input class="flex center ots" type="number" placeholder="Введите данные">
+            <span class="flex center admin_options_ots_span">Итоговая стоимость: </span>
+            <span class="flex center admin_options_ots_span price">1,500,000$</span>
         </div>
-        <div class="flex center admin_options_ots">
-            <span class="flex center admin_options_ots_span" id="mr_none">Геопривязка</span>
-        </div>
-        <div class="flex map" style="position:relative;overflow:hidden;"><iframe src="https://yandex.ru/map-widget/v1/-/CVTOqW1U" width="1200px" height="650px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
     </section>
 </body>
 </html>
